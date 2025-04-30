@@ -1,0 +1,4 @@
+{
+  "ignore": ["static/**", "dist/**", "src/client*", "node_modules/**"],
+  "ext": "js,json,ejs"
+}

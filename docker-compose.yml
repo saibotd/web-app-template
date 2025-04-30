@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    # image: git.home.saibotd.com/saibotd/bomb-ass-app:latest
+    container_name: bomb-ass-app
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,14 @@
+<h2>
+  Logged in as
+  <%= user.username %>
+</h2>
+<article>
+  <code>
+    <pre><%= JSON.stringify(user, false, 2) %></pre>
+  </code>
+</article>
+<article>
+  <form action="/logout" method="post">
+    <button role="submit" class="outline block">Ausloggen</button>
+  </form>
+</article>

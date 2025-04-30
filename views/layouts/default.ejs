@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <%- vite(['app/client.scss', 'app/client.js']) %>
+    <title>BombAssApp</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <nav>
+        <ul>
+          <li><img class="logo" src="/img/logo.svg" /></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </main>
+    <main class="container"><%- body %></main>
+    <main class="container-fluid">
+      <hr />
+      <footer>
+        <p class="center-text">©<%= DateTime.now().toFormat('yyyy') %></p>
+      </footer>
+    </main>
+  </body>
+</html>

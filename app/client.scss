@@ -1,0 +1,14 @@
+@use "@picocss/pico/scss/pico" with (
+  $theme-color: "purple"
+);
+:root {
+  --pico-border-radius: 1rem;
+}
+
+.logo {
+  width: 220px;
+}
+
+.center-text {
+  text-align: center;
+}
