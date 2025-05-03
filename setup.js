@@ -1,6 +1,6 @@
 import "dotenv/config";
 import db from "./src/db.js";
-import { Role, User } from "./src/models.js";
+import { Role, User } from "./app/models.js";
 
 await db.sync({ force: true });
 
