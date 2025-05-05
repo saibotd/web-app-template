@@ -29,7 +29,7 @@ router.post("/login", async (req, res) => {
     },
     include: [Role],
   });
-  if (user.checkPassword(req.body.password)) {
+  if (user && user.checkPassword(req.body.password)) {
     req.session.user = {
       ...user.toJSON(),
       role: user.role.name,
